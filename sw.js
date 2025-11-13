@@ -3,7 +3,7 @@ const DYNAMIC_CACHE = 'dynamic-cache-v1';
 
 const APP_SHELL_ASSETS = [
   '/',               // opcional: redirigimos a form.html
-  '/form.html',
+  '/index.html',
   '/mainmanifest.json',
   '/register.js',
   '/app.js',
