@@ -3,10 +3,10 @@ const DYNAMIC_CACHE = 'dynamic-cache-v1';
 
 const APP_SHELL_ASSETS = [
   '/',               // opcional: redirigimos a form.html
-  '/form.html',
-  '/mainmanifest.json',
-  '/register.js',
-  '/app.js',
+  '/formu/form.html',
+  '/formu/mainmanifest.json',
+  '/formu/register.js',
+  '/formu/app.js',
   '/images/icons/192.png',
   '/images/icons/512.png',
   '/images/icons/180.png',
@@ -81,7 +81,7 @@ self.addEventListener('fetch', (event) => {
   // 3) Navegaciones: si estás offline, mostrar form.html
   if (request.mode === 'navigate') {
     event.respondWith(
-      fetch(request).catch(() => caches.match('/form.html'))
+      fetch(request).catch(() => caches.match('/formu/form.html'))
     );
     return;
   }
